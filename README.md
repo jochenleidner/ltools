@@ -32,4 +32,4 @@ and consider contributing, too.
 * xmastree
 
 LTools were Written by and are copyright (c)2021 by Jochen L. Leidner.
-All rights reserved; see LICENSE.md for the license terms.
+All rights reserved; see LICENSE.txt for the license terms.
