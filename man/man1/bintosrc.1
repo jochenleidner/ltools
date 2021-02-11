@@ -1,0 +1,41 @@
+.TH bintosrc 1 "2020-02-08" "version 1.0.0" "LTools"
+
+.SH NAME
+bintosrc - generate source code from binary file
+
+.SH SYNOPSIS
+bintosrc [-l 
+.I LANG
+][-i
+.I ID
+]
+
+.SH OPTIONS
+
+The parameter
+.I LANG
+specifies the programming language (supported values are "C", "C++" and
+"Rust").
+
+The parameter
+.I ID
+specifies the identifier that the static data object will be assigned to
+(default is "data").
+
+.SH DESCRIPTION
+.B bintosrc
+reads a binary file stream from stdin and generates source code
+for initializing a static object (defaul: in the C programming
+language) from it, which is written to stdout.
+
+.SH EXAMPLE
+
+bintosrc < badger.gif > badger.c
+
+cc -c badger.c
+
+.SH SEE ALSO
+detabify(1), fortune(1), logmsg(1), ltools(1), spell(1), tabify(1), woc(1), xmastree(1)
+
+.SH AUTHOR
+Written by Jochen L. Leidner <leidner@acm.org>.

@@ -1,0 +1,43 @@
+.TH spell 1 "2021-02-10" "version 1.0.0" "LTools"
+
+.SH NAME
+spell - a simple spell-checker
+
+.SH SYNOPSIS
+spell <text-file> [<custom-dictionary>]
+
+.SH DESCRIPTION
+.B Spell
+prints all unknown words from a plain text file to stdout, one word
+per line.  Spell-checking is done by assuming a word not in the
+dictionary is a typo.  It uses the first argument as the input
+document.  If a second argument is given, it assumes it is a custom
+dictionary that will be used instead of the default file (~/.dict.en).
+The default language is English.
+
+.SH EXAMPLE
+.VERBON
+$ spell henry-james.txt
+
+contentMain
+
+contadino
+.VERBOFF
+
+.SH BUGS
+The first argument should be optional (omitted = stdin).
+The tool is not currently internationalized; multiple dictionary
+support should be added via an option, or better auto-identification.
+The tokenizer is too simple and should be expanded.
+Optionally, potential corrections could be suggested e.g. based on
+edit distance.
+The dictionary load time could be faster by using serialization.
+Mark-up (e.g. XML/HTML/LaTeX) could be optionally skipped.
+A more appealing output (underlining with ~~~~ oder coloring in red)
+ought to be added as well.
+
+.SH SEE ALSO
+bintosrc(1), detabify(1), fortune(1), logmsg(1), ltools(1), tabify(1), woc(1), xmastree(1)
+
+.SH AUTHOR
+Written by Jochen L. Leidner <leidner@acm.org>.

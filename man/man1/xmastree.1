@@ -1,0 +1,70 @@
+.TH xmastree 1 "2021-02-03" "version 1.0.0" "LTools"
+
+.SH NAME
+xmastree - print a Christmas tree to stdout
+
+.SH SYNOPSIS
+xmastree [ --interactive | -i |
+.I <HEIGHT> <WIDTH> <YEAR>
+]
+
+.SH OPTIONS
+
+The argument
+.I -i
+or
+.I --interactive
+means that the command is run in
+.B interactive
+mode, which means all parameters are read from stdin instead of from
+them command line.
+
+The optional parameters
+.I <HEIGHT>
+,
+.I <WIDTH>
+and
+.I <YEAR>
+specify the tree's shape in terms of height, width and current year (if not
+given, the year is taken from the system's clock). Height and width should
+be between 3..20.
+
+.SH DESCRIPTION
+.B xmastree
+prints a small Christmas tree to stdout.
+
+.SH EXAMPLE
+
+.VERBON
+$ xmastree 5 5 2021
+
+                                 *
+                                ***
+                               *****
+                              *******
+                                 *
+                                ***
+                               *****
+                              *******
+                                 *
+                                ***
+                               *****
+                              *******
+                                 *
+                                ***
+                               *****
+                              *******
+                                ***
+                                ***
+                                ***
+                                ***
+
+
+I wish You a Merry Christmas and a Wonderful 2022!
+.VERBOFF
+
+.SH SEE ALSO
+bintosrc(1), detabify(1), fortune(1), logmsg(1), ltools(1), spell(1), tabify(1), woc(1)
+
+.SH AUTHOR
+Written by Jochen L. Leidner <leidner@acm.org>.

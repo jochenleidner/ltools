@@ -1,0 +1,74 @@
+.TH woc 1 "2021-02-01" "version 1.0.0" "LTools"
+
+.SH NAME
+woc - count and print word occurrences
+
+.SH SYNOPSIS
+woc [ --help | -h |
+.I <fileName>
+]
+
+.SH OPTIONS
+
+The argument
+.I -h
+or
+.I --help
+shows the usage information of this command and aboarts.
+The optional parameter
+.I <fileName>
+reads the input text from the named file; alternatively,
+leaving out a file name argument, the program reads from standard
+input.
+
+.SH DESCRIPTION
+.B woc
+counts all occurrences of each word in the input text file, where
+words are strings separated by white space characters. A list of all
+words and the number of counted occurrences (separated by a TAB
+character) is printed out. The tool is case-insensitive, i.e. counts
+for upper-case and lower-case spellings are added and maintained
+for the lower-case variant.
+
+.SH EXAMPLES
+
+.nf
+$ cat test.txt | woc | sort              # sort alphabetically
+a	2
+also	1
+is	2
+one	1
+test	2
+this	2
+three	1
+two	1
+
+$ woc woc.rs | sort -nr -k 2 | less   # sort by frequency of 2nd field
+word    10
+map     7
+count   7
+usage   6
+let     6
+chr     6
+words   5
+str     4
+is      4
+fn      4
+file    4
+ascii   4
+argument        4
+args    4
+use     3
+string  3
+std     3
+mut     3
+hashmap 3
+woc     2
+...
+.fi
+
+.SH SEE ALSO
+bintosrc(1), detabify(1), fortune(1), logmsg(1), ltools(1), spell(1), tabify(1), xmastree(1)
+
+.SH AUTHOR
+Written by Jochen L. Leidner <leidner@acm.org>.

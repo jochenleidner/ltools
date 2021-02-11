@@ -1,0 +1,36 @@
+.TH fortune 1 "2021-02-03" "version 1.0.0" "LTools"
+
+.SH NAME
+fortune - prints a random "fortune cookie" message of the day or
+noteworthy quote, to enlighten or cheer up the user upon login in on
+on demand.
+
+.SH SYNOPSIS
+fortune [ <file> ]
+
+.SH OPTIONS
+
+The argument
+.I <file>
+specifies a list of memorable quotations, separated by empty lines. If
+present, <file> will be used rather than the default source (which is
+~/.fortune).
+
+.SH DESCRIPTION
+.B fortune
+prints a random quote.
+
+.SH EXAMPLE
+
+.VERBON
+$ fortune
+
+"Understanding Rocket Science is child's play in comparison to [...] understanding child's play."
+        -- Lee Rowland and Steve Tatham, "Strategic Communication & Influence Operations: Do We Really Get It?"
+.VERBOFF
+
+.SH SEE ALSO
+bintosrc(1), detabify(1), logmsg(1), ltools(1), spell(1), tabify(1), woc(1), xmastree(1)
+
+.SH AUTHOR
+Written by Jochen L. Leidner <leidner@acm.org>.

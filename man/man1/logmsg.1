@@ -1,0 +1,39 @@
+.TH logmsg 1 "2020-12-18" "version 1.0.0" "LTools"
+
+.SH NAME
+logmsg - write a logging message followed by a status to the console
+
+.SH SYNOPSIS
+logmsg 
+.I <MSG>
+[
+.I <STATUS>
+]
+
+The argument
+.I <MSG>
+is message text that will be printed; it should fit in one line.
+
+.SH OPTIONS
+
+The optional parameter
+.I <STATUS>
+specifies a short status string (typically "INFO", "WARN" or "ERROR";
+if omitted, "INFO" will be the default status). The status will be
+shown after the message, and the interim space will be padded by dots.
+
+.SH DESCRIPTION
+.B bintosrc
+prints a short message and status line to stdout.
+
+.SH EXAMPLE
+
+$ logmsg "Printer is low on toner" "WARN"
+
+Printer is running low on toner. . . . . . . . . . . . . . . . . . . . [WARN ]
+
+.SH SEE ALSO
+bintosrc(1), detabify(1), fortune(1), ltools(1), spell(1), tabify(1), woc(1), xmastree(1)
+
+.SH AUTHOR
+Written by Jochen L. Leidner <leidner@acm.org>.
