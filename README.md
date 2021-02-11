@@ -23,12 +23,13 @@ an initial 1.0.0 release.  It is hoped that folks find them useful,
 and consider contributing, too.
 
 * bintosrc
-* detab
-* entab
+* detabify
 * fortune
 * logmsg
 * spell
+* tabify
 * woc
+* xmastree
 
 LTools were Written by and are copyright (c)2021 by Jochen L. Leidner.
 All rights reserved; see LICENSE.md for the license terms.
