@@ -1,4 +1,4 @@
-*** LTools ***
+LTools - README
 
 LTools are a set of small but useful free, open-source
 productivity-enhancing command-line tools for UNIX, Linux and similar
