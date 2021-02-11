@@ -1,0 +1,26 @@
+SLUC Reloaded License
+
+LTools is copyright © 2021 by Jochen L. Leidner <leidner@acm.org>.
+All rights reserved.
+
+This software is free, open source software in the sense of "free as
+in 'freedom'.": a perpetual, transferrable license is granted to
+execute, inspecte, study, copy, redistribute, sell, give for free,
+borrow, lend, modify, extend, embed, print, invoke, call, reproduce,
+translate or apply it freely for any purpose, provided that all of the
+following three clauses are obeyed at all times:
+
+1. (a) This software may not be stored on, deployed on, executed by,
+       transmitted between machinery owned, controlled or funded by military
+       organizations.
+   (b) This software must not be used in a weapon system.
+   (c) This software must not be stored on a system that is part of an
+       organization that belongs to a defense organization, defense-supporting
+       organization or kept in a building that also houses lethal weapons.
+
+2. The attribution, copyright notice and this license must be included in any
+   derivative work.
+
+3. All derivative work inherits this license. This software or and work derived
+   from it may be distributed under alternative licenses in addition to this
+   license, provided clauses (1.), (2.) and (3.) are included in it and apply.

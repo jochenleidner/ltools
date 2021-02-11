@@ -1,0 +1,22 @@
+[package]
+name = "ltools"
+version = "0.1.0"
+authors = ["Jochen L. Leidner <leidner@acm.org>"]
+edition = "2018"
+description = "a set of command-line productivity tools"
+readme = "README.md"
+homepage = "https://github.com/jochenleidner/ltools/"
+repository = "https://github.com/jochenleidner/ltools/"
+license-file = "LICENSE.txt"
+keywords = ["tools", "filters", "productivity"]
+categories = ["command-line-utilities"]
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+regex = "1"
+rand = "0.8"
+directories = "3.0"
+ansi_term = "0.12"
