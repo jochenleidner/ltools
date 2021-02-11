@@ -1,4 +1,4 @@
-=== LTools ===
+*** LTools ***
 
 LTools are a set of small but useful free, open-source
 productivity-enhancing command-line tools for UNIX, Linux and similar
@@ -30,5 +30,5 @@ and consider contributing, too.
 * spell
 * woc
 
-LTools were Written by and are copyright (c)2021 by Jochen L. Leidner
-<leidner@acm.org>.  All rights reserved; see LICENSE.md for the terms.
+LTools were Written by and are copyright (c)2021 by Jochen L. Leidner.
+All rights reserved; see LICENSE.md for the license terms.
