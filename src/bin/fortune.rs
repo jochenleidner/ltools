@@ -17,7 +17,7 @@ use std::path::Path;
 const DEFAULT_FILE_NAME : &str = ".fortune";
 
 fn usage() {
-   eprintln!("usage:\n\tfortune [<fortunte_cookie_file_name>]\n");
+   eprintln!("usage:\n\tfortune [<fortune_cookie_file_name>]\n");
    std::process::exit(1);
 }
 
