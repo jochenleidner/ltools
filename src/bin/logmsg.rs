@@ -6,7 +6,7 @@
 // Example:
 //   $ logmsg "Running low on disk space" "WARN"
 //
-// Written 2021-02-08 by Jochen L. Leidner <leidner@acm.org>.
+// Copyright ©2021 by Jochen L. Leidner <leidner@acm.org>. All rights reserved.
 //=============================================================================
 
 use std::env;
