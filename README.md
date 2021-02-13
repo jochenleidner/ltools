@@ -27,6 +27,7 @@ and consider contributing, too.
 * fortune
 * logmsg
 * spell
+* sregex
 * tabify
 * woc
 * xmastree
