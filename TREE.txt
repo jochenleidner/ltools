@@ -1,0 +1,28 @@
+.
+├── Cargo.toml
+├── LICENSE.txt
+├── man
+│   └── man1
+│       ├── bintosrc.1
+│       ├── fortune.1
+│       ├── logmsg.1
+│       ├── ltools.1
+│       ├── spell.1
+│       ├── sregex.1
+│       ├── woc.1
+│       └── xmastree.1
+├── README.md
+├── src
+│   └── bin
+│       ├── bintosrc.rs
+│       ├── detabify.rs
+│       ├── fortune.rs
+│       ├── logmsg.rs
+│       ├── spell.rs
+│       ├── sregex.rs
+│       ├── tabify.rs
+│       ├── woc.rs
+│       └── xmastree.rs
+└── TREE
+
+4 directories, 21 files
