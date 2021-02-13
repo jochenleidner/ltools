@@ -1,0 +1,32 @@
+.TH sregex 1 "2021-02-13" "version 1.0.0" "LTools"
+
+.SH NAME
+sregex - substitute all regular expression matches
+
+.SH SYNOPSIS
+sregex [<text-file>] <pattern> <replacement>
+
+.SH DESCRIPTION
+.B sregex
+searches stdin (or a given text file) for all occurrences of a pattern
+and replaces it with a given replacement text or pattern. The result is
+written to stdout.
+
+.SH EXAMPLE
+.VERBON
+$ echo "Not my favorite movie: 'Citizen Kane' (1941)." \
+  | sregex "'(?P<title>[^']+)'\s+\((?P<year>\d{4})\)"  \
+           '<title>$title</title><year>$year</year>'
+Not my favorite movie: <title>Citizen Kane</title><year>1941</year>.
+.VERBOFF
+
+.SH BUGS
+Currently, the file needs to fit into memory (no mmap yet).
+Cannot process files in-line yet.
+Does not support sets of patterns to be read from a file yet.
+
+.SH SEE ALSO
+bintosrc(1), detabify(1), fortune(1), logmsg(1), ltools(1), spell(1), tabify(1), woc(1), xmastree(1)
+
+.SH AUTHOR
+Written by Jochen L. Leidner <leidner@acm.org>.
