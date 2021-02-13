@@ -1,4 +1,4 @@
-LTools - README
+LTools — README
 
 LTools are a set of small but useful free, open-source
 productivity-enhancing command-line tools for UNIX, Linux and similar
@@ -13,7 +13,7 @@ Note that some of them name-clash with existing commands depending on
 the host operating system. Therefore, order in the PATH environment
 variable matters, and as a resolution mechanism, the LTools installer
 also installs variants prefixed by "l" (e.g. spell(1) is also
-available as -- a soft-link, namely -- lspell(1)).
+available as — a soft-link, namely — lspell(1)).
 
 Some LTools were originally started as simple programming exercises
 when the author wanted to learn and play/experiment with the Rust
@@ -22,15 +22,15 @@ two jobs, Jochen Leidner developed a bunch more and bundled them for
 an initial 1.0.0 release.  It is hoped that folks find them useful,
 and consider contributing, too.
 
-* bintosrc
-* detabify
-* fortune
-* logmsg
-* spell
-* sregex
-* tabify
-* woc
-* xmastree
+· bintosrc
+· detabify
+· fortune
+· logmsg
+· spell
+· sregex
+· tabify
+· woc
+· xmastree
 
-LTools were Written by and are copyright (c)2021 by Jochen L. Leidner.
+LTools were Written by and are copyright ©2021 by Jochen L. Leidner.
 All rights reserved; see LICENSE.txt for the license terms.
