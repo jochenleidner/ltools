@@ -5,6 +5,7 @@
 │   └── man1
 │       ├── bintosrc.1
 │       ├── fortune.1
+│       ├── library.1
 │       ├── logmsg.1
 │       ├── ltools.1
 │       ├── spell.1
@@ -17,12 +18,11 @@
 │       ├── bintosrc.rs
 │       ├── detabify.rs
 │       ├── fortune.rs
+│       ├── library.rs
 │       ├── logmsg.rs
 │       ├── spell.rs
 │       ├── sregex.rs
 │       ├── tabify.rs
 │       ├── woc.rs
 │       └── xmastree.rs
-└── TREE
-
-4 directories, 21 files
+└── TREE.txt
