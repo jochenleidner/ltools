@@ -25,6 +25,7 @@ and consider contributing, too.
 · bintosrc
 · detabify
 · fortune
+· library
 · logmsg
 · spell
 · sregex
