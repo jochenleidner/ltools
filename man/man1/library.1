@@ -1,0 +1,59 @@
+.TH spell 1 "2021-02-14" "version 1.0.0" "LTools"
+
+.SH NAME
+library - a crude library catalog database manager
+
+.SH SYNOPSIS
+library <command> [arguments...]
+
+.SH DESCRIPTION
+.B Library
+can manage a catalog for your personal library of books.  It internally
+maintains an SQL database (based on SQLite).
+
+.SH OPTIONS
+The following sub-commands are supported (to be given as the first argument):
+
+new	create new empty database
+
+add	insert new record
+
+del	delete record with a given ID
+
+dump	SQL dump of complete DB to stdout (e.g. for backup)
+
+list	print out a human-friendly list of all records
+
+export	print out all records in BibTeX format
+
+search	find author or keywrods in title
+
+.SH EXAMPLE
+.VERBON
+$ library new
+$ library add
+Type:	
+Authors:	Knuth, Donald E.   
+Editors:	
+Title:		The Art of Computer Programming
+Year:		1968-
+Edition:	
+Location:	Reading, MA, USA
+Publisher:	Addison-Wesley
+$ library search Art
+#1	Ok(Book { bookno: 1, id: "8749a2b2-b24e-5c8a-b116-bb497fa77d60", pubtype: "book", authors: "Knuth, Donald E.", editors: "", title: "The Art of Computer Programming", year: "1968-", edition: "", location: "Reading, MA, USA", publisher: "Addison-Wesley" })
+
+.VERBOFF
+
+.SH BUGS
+The BibTeX export has not been implemented yet.
+The "list" format is crude.
+The SQL dump has not been implemented yet.
+The error handling needs to be improved.
+There is no readline support yet.
+
+.SH SEE ALSO
+bintosrc(1), detabify(1), fortune(1), logmsg(1), ltools(1), spell(1), sregex(1), tabify(1), woc(1), xmastree(1)
+
+.SH AUTHOR
+Written by Jochen L. Leidner <leidner@acm.org>.
