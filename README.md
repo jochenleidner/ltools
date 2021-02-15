@@ -1,12 +1,12 @@
 LTools — README
 
 LTools are a set of small but useful free, open-source
-productivity-enhancing command-line tools for UNIX, Linux and similar
-open-source operating systems.  They embrace the UNIX philosophy in
+productivity-enhancing command-line tools for Unix, Linux and similar
+open-source operating systems.  They embrace the Unix philosophy in
 that many of them are intended to be used as part of pipes that read
 from standard input and write to standard output streams, and that
 they combined so the output of one can be the input to another. Thus,
-they are also interoperatable with existing UNIX/Linux commands,
+they are also interoperatable with existing UNIX™/Linux commands,
 whether they are built in or user-contributed.
 
 Note that some of them name-clash with existing commands depending on
@@ -23,14 +23,23 @@ an initial 1.0.0 release.  It is hoped that folks find them useful,
 and consider contributing, too.
 
 · bintosrc
+
 · detabify
+
 · fortune
+
 · library
+
 · logmsg
+
 · spell
+
 · sregex
+
 · tabify
+
 · woc
+
 · xmastree
 
 LTools were Written by and are copyright ©2021 by Jochen L. Leidner.

@@ -1,6 +1,6 @@
 [package]
 name = "ltools"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Jochen L. Leidner <leidner@acm.org>"]
 edition = "2018"
 description = "a set of command-line productivity tools"
@@ -8,15 +8,22 @@ readme = "README.md"
 homepage = "https://github.com/jochenleidner/ltools/"
 repository = "https://github.com/jochenleidner/ltools/"
 license-file = "LICENSE.txt"
-keywords = ["tools", "filters", "productivity"]
+keywords = ["tools", "filters", "productivity", "command-line", "UNIX philosophy"]
 categories = ["command-line-utilities"]
 publish = false
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-chrono = "0.4"
-regex = "1"
-rand = "0.8"
-directories = "3.0"
 ansi_term = "0.12"
+chrono = "0.4"
+directories = "3.0"
+rand = "0.8"
+regex = "1"
+uuid = { version = "0.8", features = ["serde", "v5"] }
+lazy_static = "0.1.*"
+rustyline = "7.1.0"
+
+[dependencies.rusqlite]
+version = "0.21.0"
+features = ["bundled"]
