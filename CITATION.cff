@@ -1,0 +1,21 @@
+# YAML 1.2
+---
+authors: 
+  -
+    family-names: Leidner
+    given-names: "Jochen L."
+    orcid: "https://orcid.org/0000-0002-1219-4696"
+cff-version: "1.1.0"
+date-released: 2021-02-15
+identifiers: 
+  - 
+    type: url
+    value: "https://github.com/jochenleidner/ltools"
+keywords: 
+  - "command-line tools"
+  - "open-source"
+  - Rust
+message: "If you use this software, please cite it using these metadata."
+title: LTools
+version: "0.2.0"
+...
